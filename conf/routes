@@ -1,0 +1,8 @@
+GET  /   controllers.ApiController.index
++nocsrf
+POST /api    controllers.ApiController.addQuote()
+GET /api     controllers.ApiController.another
+GET /api/:name controllers.ApiController.getOne(name)
+
++nocsrf
+PUT /api/:name controllers.ApiController.updateOne(name)
